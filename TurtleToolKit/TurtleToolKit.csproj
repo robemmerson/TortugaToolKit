@@ -142,4 +142,7 @@
     <Folder Include="TurtleToolKit\Persistence\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /y $(TargetPath) C:\Users\rob\Desktop\OSEP\PEN-300\exam_prep\local\www\tool.dll</PostBuildEvent>
+  </PropertyGroup>
 </Project>
